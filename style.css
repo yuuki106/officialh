@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+body{
+  margin: 0;
+  /* min-width: 500px; */
+}
+img{
+  vertical-align: bottom;
+}
+/* -------------header------------- */
+header{
+  background-color: black;
+  display: flex;
+  padding: 4px 16px;
+  position: fixed;
+  width: 100%;
+  min-width: 500px;
+  z-index: 2;
+
+}
+h1{
+  font-size: 0;
+}
+header h2{
+  color: white;
+  margin: 0 0 0 4px;
+  line-height: 64px;
+  font-size: 16px;
+  font-family: "Honoka_Shin_Mincho_L";
+}
+#open{
+  cursor: pointer;
+  position: fixed;
+  top: 24px;
+  right:16px;
+}
+#open ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#open li{
+  border: 2px solid white;
+  width: 26px;
+  margin-bottom: 6px;
+  transition: transform .3s;
+}
+
+.first-trans{
+  transform: rotate(135deg);
+  position: absolute;
+  top: 10px;
+  right:0;
+}
+.second-trans{
+  transform: rotate3d(0, 1, 0, 90deg);
+  position: absolute;
+  top: 10px;
+  right:0;
+}
+.third-trans{
+  transform: rotate(-135deg);
+  position: absolute;
+  top:10px;
+  right:0;
+
+}
+/* -------------menu------------- */
+
+#menu{
+  background-image: url(蛍.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  margin-top: 72px;
+  transition: transform .3s;
+}
+#menu a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hidden{
+  transform: translateY(-400px);
+}
+
+#menu ul{
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+}
+
+#menu li{
+  padding:16px 0;
+}
+
+
+
+/* -------------space------------- */
+.space{
+  height: 72px;
+  background-color: rgb(0, 0, 0);
+
+}
+/* -------------slide-wrapper------------- */
+.slide-wrapper{
+  background-image: url(BlackBack.jpeg);
+  background-size: cover;
+  background-position: left;
+  position: relative;
+  padding: 16px 0;
+}
+.slideShow{
+  width: 55%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.slideShow img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#slides {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: transform .3s;
+}
+#slides li{
+  height: 100%;
+  min-width: 100%;
+}
+
+#prev,
+#next{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  cursor: pointer;
+  padding: 0 16px;
+  background-color: rgba(0, 0, 0, 0.674);
+  border: none;
+  color: white;
+  font-size: 32px;
+}
+#prev{
+  left: 0;
+}
+#next{
+  right: 0;
+}
+
+
+/* -------------info-wrapper------------- */
+
+.info-wrapper{
+  background-image: url(BlackBack5.jpeg);
+  padding: 64px 0;
+}
+
+.info-wrapper h2{
+  font-size: 32px;
+  margin: 0 0 0 16px;
+  font-family: "Honoka_Shin_Mincho_L";
+  color: white;
+}
+.info-wrapper p{
+  margin: 8px 0 0 0;
+  color: white;
+}
+.info-text{
+  width: 90%;
+  margin: 32px auto 0;
+}
+
+/* -------------news-wrapper------------- */
+.news-wrapper{
+  background-image: url(BlackBack3.jpeg);
+  background-size: cover;
+  background-position: bottom;
+  padding: 64px 0;
+  
+}
+.news-wrapper ul{
+  list-style: none;
+  margin: 64px auto 0;
+  width: 90%;
+  padding: 0;
+  /* background-color: pink; */
+}
+.news-wrapper li{
+  border-bottom: 1px dotted white;
+  margin: 12px 0;
+  padding-bottom: 8px;
+}
+.news-wrapper h2{
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Honoka_Shin_Mincho_L";
+}
+.news-wrapper p{
+  margin: 0;
+  color: white;
+}
+.news-wrapper a{
+  text-decoration: none;
+  color: rgb(178, 2, 2);
+}
+
+
+/* -------------sns-wrapper------------- */
+.sns-wrapper{
+  padding: 16px 0;
+  background-image: url(BlackBack02.jpeg);
+
+}
+.sns-wrapper ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+
+
+
+
+/* -------------slide-wrapper------------- */
+
+footer{
+  background-color: black;
+  text-align: center;
+  padding: 32px 0;
+}
+small{
+  color: white;
+  font-size: 12px;
+}
